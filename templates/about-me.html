@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image-x/png" href="../static/image/icon.ico">
+    <title>{% block title %}Vinicius Ferreira{% endblock %}</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<body>
+    {% extends 'base.html' %}
+
+    {% block content %}
+    <main class="sobremim">
+        <div class="apresentacao-quemsou">
+            <h3>Olá, Me chamo <span style="color: #2850c3; font-weight: 700;">Vinicius Ferreira</span></h3>
+            <p>Sou formado em Engenharia da Computação e atuo desde 2021 como Desenvolvedor Full Stack e Assistente de TI. Minha trajetória é marcada por uma forte paixão pela tecnologia, tanto no desenvolvimento de soluções web quanto no suporte técnico eficiente para empresas e seus colaboradores.
+
+                <p style="margin-top: 5px;">No campo do desenvolvimento, utilizo tecnologias como HTML5, CSS3, JavaScript, React.js no front-end, além de Python, PHP e bancos de dados MySQL no back-end. Tenho uma sólida experiência em criar soluções escaláveis, eficientes e automatizadas, sempre com foco na otimização de processos e na excelência da experiência do usuário.</p>
+                
+                <p style="margin-top: 5px;">Paralelamente, atuei como Assistente de TI Help Desk na Associação Cultural Brasil Estados Unidos, fornecendo suporte técnico para funcionários e alunos. Minha atuação envolveu a resolução de chamados, assistência técnica presencial e remota, gerenciamento de sistemas de ticketing, além de garantir que todos os problemas fossem resolvidos dentro dos prazos e conforme as melhores práticas de segurança. Esse trabalho me proporcionou habilidades valiosas em diagnósticos e resolução de problemas em tempo real, além de uma forte comunicação com as equipes de usuários.</p></p>
+        </div>
+        <div class="apresentacao-publicoalvo">
+            <div class="mensagem-publicoalvo">
+                <h3>Transformando ideias em realidade</h3>
+                <p> Minha abordagem sempre é focada na busca por soluções práticas e inovadoras para os desafios técnicos que enfrento, com compromisso em entregar resultados de qualidade. Eu me defino como um profissional <strong>inovador</strong>, <strong>determinado</strong> e <strong>colaborativo</strong>, e estou constantemente em busca de novos desafios que me permitam aplicar meu conhecimento e continuar crescendo como profissional.</p>
+            </div>
+            <div class="publico-alvo-infos">
+                <div class="publico-alvo-infos-box">
+                    <div style="color: #2850c3; font-weight: bold" class="anos">3+</div>
+                    <div class="texto">Anos de experiência</div>
+                </div>
+                <div class="publico-alvo-infos-box">
+                    <div style="color: #2850c3; font-weight: bold" class="anos">15+</div>
+                    <div class="texto">Projetos concluidos</div>
+                </div>
+            </div>
+        </div>  
+        <div class="conhecimentos">
+            <div class="linguagens">
+                <h3>Principais linguagens</h3>
+                <ul>
+                    <li><img src="../static/image/arrow.png" alt="">Html</li>
+                    <li><img src="../static/image/arrow.png" alt="">CSS</li>
+                    <li><img src="../static/image/arrow.png" alt="">JavaScript</li>
+                    <li><img src="../static/image/arrow.png" alt="">Python</li>
+                    <li><img src="../static/image/arrow.png" alt="">Php</li>
+                    <li><img src="../static/image/arrow.png" alt="">SQL</li>
+                </ul>
+            </div>
+            <div class="vamosconversar">
+                <h3>Vamos trabalhar juntos</h3>
+                <a href="{{ url_for('contato') }}">Clique aqui! <img src="../static/image/seta-direita.png" alt=""> </a>
+            </div>
+        </div>        
+    </main>
+    {% endblock %}
+
+    
+</body>
+</html>
